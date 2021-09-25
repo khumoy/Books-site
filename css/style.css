@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10; }
+  header .navbar .nav-link img {
+    height: 80px;
+    width: 150px;
+    object-fit: cover; }
+  header .navbar .menuBurg {
+    z-index: 88; }
+    header .navbar .menuBurg .ham {
+      position: fixed;
+      /* keep the hamburger button above everything */
+      z-index: 100;
+      top: 1rem;
+      right: 1rem;
+      width: 3rem;
+      height: 3rem;
+      border: none;
+      border-radius: 10px;
+      background: rgba(47, 98, 194, 0.555);
+      cursor: pointer; }
+    header .navbar .menuBurg .xIcon {
+      display: none; }
+    header .navbar .menuBurg .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      color: white;
+      transform: translateY(-100%);
+      transition: transform 0.2s;
+      list-style: none;
+      padding-top: 4rem; }
+    header .navbar .menuBurg .showMenu {
+      transform: translateY(0); }
+    header .navbar .menuBurg li {
+      padding: 1rem 0; }
+    header .navbar .menuBurg .menuLink {
+      display: inline;
+      font-size: 2rem;
+      color: #ddcbcb;
+      text-decoration: none; }
+    header .navbar .menuBurg .menuLink:hover {
+      text-decoration: underline; }
+
+.section1 {
+  padding: 150px 10px;
+  /* Loading css */
+  /* Error css */ }
+  .section1 .sideBarLeft {
+    background-color: #111010;
+    width: 300px;
+    border-radius: 15px; }
+    .section1 .sideBarLeft .list-group .list-group-item {
+      border: none;
+      border-radius: 10px; }
+  .section1 .sideBarRight {
+    flex: 1;
+    padding: 15px 10px;
+    margin: 10px;
+    background-color: rgba(215, 223, 223, 0.747); }
+    .section1 .sideBarRight .card_book {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .section1 .sideBarRight .card_book .card_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 5px;
+        border-radius: 10px; }
+  .section1 .load {
+    font-family: 'Monda', sans-serif;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#3030dd, lightblue, blueviolet);
+    /* display: none; */ }
+  .section1 .loader span {
+    font-size: 45px;
+    color: #001f3f;
+    font-weight: bold;
+    animation: animate 5s ease-in-out infinite; }
+  .section1 .loader span:nth-child(1) {
+    animation-delay: 0.8s; }
+  .section1 .loader span:nth-child(2) {
+    animation-delay: 1s; }
+  .section1 .loader span:nth-child(3) {
+    animation-delay: 1.2s; }
+  .section1 .loader span:nth-child(4) {
+    animation-delay: 1.4s; }
+  .section1 .loader span:nth-child(5) {
+    animation-delay: 1.6s; }
+  .section1 .loader span:nth-child(6) {
+    animation-delay: 1.8s; }
+  .section1 .loader span:nth-child(7) {
+    animation-delay: 2s; }
+  .section1 .loader span:nth-child(8) {
+    animation-delay: 2.2s; }
+  .section1 .loader span:nth-child(9) {
+    animation-delay: 2s; }
+  .section1 .loader span:nth-child(10) {
+    animation-delay: 2.2s; }
+@keyframes animate {
+  10% {
+    color: #FFDC00; }
+  20% {
+    color: #01FF70; }
+  30% {
+    color: #F012be; }
+  40% {
+    color: #0074d9; }
+  50% {
+    color: #7fdbff; }
+  60% {
+    color: #85144b; }
+  70% {
+    color: #ff851b; }
+  80% {
+    color: #2ecc40; }
+  90% {
+    color: #ff4136; }
+  100% {
+    color: #00ff9d; } }
+  .section1 .errPanel {
+    width: 100%; }
+  .section1 .errors {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #752020;
+    color: snow; }
+  .section1 .textErr {
+    font-size: 40px; }
+  .section1 .errIcon {
+    margin-left: 20px;
+    animation: errorAnime 2s ease-in-out infinite; }
+  .section1 .errIcon {
+    animation-delay: 2s; }
+@keyframes errorAnime {
+  10% {
+    transform: scale(1); }
+  100% {
+    transform: scale(3);
+    color: red; } }
+
+/*# sourceMappingURL=style.css.map */

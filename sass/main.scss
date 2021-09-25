@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+header {
+    position: fixed;
+        top: 0;
+        z-index: 10;
+    .navbar {
+        
+        .nav-link {
+            img {
+                height: 80px;
+                width: 150px;
+                object-fit: cover;
+            }
+        }
+        .menuBurg {
+            z-index: 88;
+
+            .ham {
+                position: fixed;
+                /* keep the hamburger button above everything */
+                 z-index: 100;
+
+                top: 1rem;
+                right: 1rem;
+                width: 3rem;
+                height: 3rem;
+                border:none;
+                border-radius: 10px;
+                background: rgba(47, 98, 194, 0.555);
+                cursor: pointer;
+              }
+              
+              .xIcon {
+                display: none;
+              }
+              
+              .menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100vh;
+                background: black;
+                color: white;
+                transform: translateY(-100%);
+                transition: transform 0.2s;
+                list-style: none;
+                padding-top: 4rem;
+              }
+              
+              .showMenu {
+                transform: translateY(0);
+              }
+              
+              li {
+                padding: 1rem 0;
+              }
+              
+              .menuLink {
+                display: inline;
+                font-size: 2rem;
+                color: rgb(221, 203, 203);
+                text-decoration: none;
+              }
+              
+              .menuLink:hover {
+                text-decoration: underline;
+              }
+        }
+
+    }
+}
+
+// section
+
+.section1 {
+    padding: 150px 10px ;
+    .sideBarLeft {
+        background-color: rgb(17, 16, 16);
+        width: 300px;
+        border-radius: 15px;
+        .list-group {
+            .list-group-item {
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    };
+.sideBarRight {
+        flex: 1;
+        padding: 15px 10px;
+        margin: 10px ;
+        background-color: rgba(215, 223, 223, 0.747);
+        .card_book {     
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card_title {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              
+    
+                padding: 10px 5px;
+                 border-radius: 10px;
+            }
+        }
+    }
+    
+       /* Loading css */
+.load {
+    font-family: 'Monda', sans-serif;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgb(48, 48, 221),lightblue,blueviolet);   
+    /* display: none; */
+}
+.loader span {
+    font-size: 45px;
+    color: #001f3f;
+    font-weight: bold;
+    animation: animate 5s ease-in-out infinite;
+}
+.loader span:nth-child(1){animation-delay: 0.8s;}
+.loader span:nth-child(2){animation-delay: 1s;}
+.loader span:nth-child(3){animation-delay: 1.2s;}
+.loader span:nth-child(4){animation-delay: 1.4s;}
+.loader span:nth-child(5){animation-delay: 1.6s;}
+.loader span:nth-child(6){animation-delay: 1.8s;}
+.loader span:nth-child(7){animation-delay: 2s;}
+.loader span:nth-child(8){animation-delay: 2.2s;}
+.loader span:nth-child(9){animation-delay: 2s; }
+.loader span:nth-child(10){animation-delay: 2.2s;}
+
+@keyframes animate {
+    10%{color: #FFDC00}
+    20%{color: #01FF70}
+    30%{color: #F012be}
+    40%{color: #0074d9}
+    50%{color: #7fdbff}
+    60%{color: #85144b}
+    70%{color: #ff851b}
+    80%{color: #2ecc40;}
+    90%{color: #ff4136;}
+    100%{color: #00ff9d;}
+};
+
+/* Error css */
+.errPanel {
+    width: 100%;
+
+}
+.errors {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(117, 32, 32);
+    color: rgb(255, 250, 250);
+}
+.textErr {
+    font-size: 40px;
+
+}
+.errIcon{
+    margin-left: 20px;
+    animation: errorAnime 2s ease-in-out infinite;
+}
+.errIcon {animation-delay: 2s;}
+@keyframes errorAnime {
+    10%{transform: scale(1); }
+    100%{transform: scale(3);color: rgb(255, 0, 0); }
+}
+};
